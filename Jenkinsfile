@@ -8,10 +8,10 @@ pipeline {
   stages {
     stage('Prompt') {
       steps {
-        input(message: 'Test Input', id: 'Input', ok: 'Input', submitter: 'Test', submitterParameter: 'Test')
+        input(message: 'Test Input', id: 'Input', ok: 'true')
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'Test Succeeded'
       }
